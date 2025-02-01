@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-control
+        {
+            border-radius: 30%;
+            height: 50px;
+            
+        }
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+
+<body style="background-color: rgb(209, 221, 217);">
+
+
+    <!--header started-->
+    <!--header-->
+    <div class="container-fluid m-0 p-0" >
+        <div class="overflow-hidden">
+        <div class="row fw-bolder container-fluid m-0 p-0" style="background-color: rgb(49, 48, 48);">
+            <div class="col-md-6 pt-2 pb-2">
+                <span class="text-light mx-5"> <i class="bi bi-envelope"</i>
+                    </i>+astro@gmail.com,<i class="bi bi-telephone-fill"></i>+918527083XXX</span>
+            </div>
+            <div class="col-md-3"></div>
+
+            <div class="col-md-3 pb-2 pt-2  text-light icon" style="font-size:1.2rem;">
+                <span class="me-2"> <i class="bi bi-twitter mx-2"></i></span>
+                <span class="me-2"> <i class="bi bi-facebook mx-2"></i></span>
+                <span class="me-2"> <i class="bi bi-instagram mx-2"></i></span>
+            </div>
+
+        </div>
+        <!--Nav-->
+        <nav class="navbar navbar-expand-lg sticky-top navbar-border " style="background-color:rgb(240, 236, 236);
+         width: 100%;background-image: url('');">
+            <div class="container-fluid">
+
+                <a class="navbar-brand mx-10  fw-bolder" href="#"><img src="./Img/prd 2.jpg" class=" img-fluid " id="logo-image" style="height:4rem;"></a>
+        <h1 style="color: coral;">Astro.net</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 mx-5 margin-left: 30px;">
+                        <li class="nav-item mx-3 ">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <!-- 
+                            <li class="nav-item dropdown mx-3">
+                                <a class="nav-link dropdown-toggle fw-bolder" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    File
+                                </a>
+                                <ul class="dropdown-menu ">
+                                    <li><a class="dropdown-item" href="#">Upload File</a></li>
+                                    <li><a class="dropdown-item" href="#">Show Upload File</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"> Download _File</a></li>
+                                </ul>
+                            </li> -->
+                        <li class="nav-item mx-3 ">
+                            <a class="nav-link active" aria-current="page" href="./services.html">Lucky Number_Predication</a>
+                        </li>
+                        <li class="nav-item mx-3 ">
+                            <a class="nav-link active" aria-current="page" href="./contact.html">Feedback</a>
+                        </li>
+                        <li class="nav-item mx-3 ">
+                            <a class="nav-link active" aria-current="page" href="./contact.html">About Us</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div >
+            </div>
+        </nav>
+
+
+        <!--header ended-->
+
+
+
+    <div class="container-fluid">
+
+        <!---------------- UPPER SECTION --------------->
+
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-sm-4 col-md-4 col-lg-4"></div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <h2 style="color:red;  font-weight:bolder;">अपना लकी नंबर ज्ञात करें</h2>
+                <p><b>अपनी जन्म तिथि और नाम के आधार पर अपना लकी नंबर जानें !</b></p>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4"></div>
+        </div>
+
+        <!-- ------------------------ -->
+
+        <!---------- FORM SECTION -------->
+
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-sm-3 col-md-3 col-lg-3"></div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <h4 style="margin-bottom: 40px; color: blue;"><b>अपना विवरण भरें -</b></h4>
+                <form id="luckynumberForm">
+                    <div class="form-group">
+                        <label for="name">
+                            <h5>नाम :</h5>
+                        </label>
+                        <input type="text" class="form-control" id="name" oninput="validateInput()">
+                    </div>
+                    <div class="form-group" style="margin-top: 20px;">
+                        <label for="dob">
+                            <h5>जन्म तिथि :</h5>
+                        </label>
+                        <input type="date" class="form-control" id="dob" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="margin-top: 20px;margin-bottom: 80px;">लकी नंबर ज्ञात करें</button>
+                </form>
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3"></div>
+        </div>
+
+        <!-- Result Section -->
+        <div id="resultSection" style="display: none; margin-top: 30px;">
+            <h4> Your Lucky Number is: <span id="luckyNumber" style="color:blue"></span></h4>
+            <span id="spname" style="color:red"></span>>
+        </div>
+
+    </div>
+
+
+
+
+    <!---------------------------------------- footer-------------------------------- -->
+
+<!--Footer design started-->
+<div class="row container-fluid m-0 p-0">
+    <footer class="footer-outer text-light pt-5" style=" background-color: black">
+        <div class="container d-flex align-items-center justify-content-center">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <label class="footer-heading">
+                                <a href="#" class="footer-logo"><img src="./astrologer.jpg"
+                                        class="img-fluid" style="height: 5rem;"</a>
+                                        
+                            </label>
+                            <a href="#" class="readmore">The phrase 
+                                <i class="bi bi-arrow-right" style="color: rgb(240, 237, 237);"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="row">
+                        <div class="col-sm-3 mb-4 border-left">
+                            <h2 class="footer-heading">Social</h2>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#" class="pt-1 d-block">Twitter</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pt-1 d-block">Instagram.</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pt-1 d-block">Facebook</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pt-1 d-block">Astrologer</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3 mb-4 border-left">
+                            <h2 class="footer-heading">Quicklinks</h2>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#" class="pt-1 d-block">Abouts Us</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pt-1 d-block">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pt-1 d-block">Astrologers"</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pt-1 d-block">Appointment" </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3 mb-4 border-left">
+                            <h2 class="footer-heading">Account</h2>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#" class="pt-1 d-block">Join now,
+                                        Pricing
+                                </li>
+                                <li>
+                                    <a href="#" class="pt-1 d-block">Contributor Sign Up</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pt-1 d-block">Contributor Questions</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pt-1 d-block">language
+                                        English</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3 mb-4 border-left">
+                            <h2 class="footer-heading">VactorStock</h2>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#" class="pt-1 d-block">All Vactor</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pt-1 d-block">What is a Vector?</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pt-1 d-block">Frequently Asked Questions</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pt-1 d-block">Terms and Conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row mt-5">
+                    <div class="col-sm-6">
+                        <p class="text-center">
+                            Copyright Alert! All right reserved within <br /> Kamadgiri Software Solution
+                            Private
+                            limited &copy; 2024
+                        </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="mb-0 list-unstyled tpc gap-4">
+                            <a href="#">Terms</a>
+                            <a href="#">Privacy</a>
+                            <a href="#">Compliances</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<!--Footer design ended-->
+
+<!-- -------------------------------SCRIPT--------------------------- -->
+    <script>
+    
+
+        document.getElementById('luckynumberForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // Form submit hone se rokiye
+            var name = document.getElementById('name').value.trim();
+            var dob = new Date(document.getElementById('dob').value);
+            var luckyNumber = calculateLuckyNumber(name, dob);
+            document.getElementById('luckyNumber').innerText = luckyNumber;
+            document.getElementById('resultSection').style.display = 'block'; // Result section dikhaiye
+        });
+
+        function calculateLuckyNumber(name, dob)
+        // ----------------------------------------------------
+        {
+            var day = dob.getDate();
+            var month = dob.getMonth() + 1; 
+            var year = dob.getFullYear() % 100; 
+            var dobValue = day + month + year; 
+
+            // नाम के वर्णों की संख्या
+            var nameValue = name.length;
+
+            // ++++++++++++++++++++
+            if (nameValue === 0) {
+                document.getElementById("spname").innerHTML = "कृपया नाम दर्ज करें";
+                return "गलत जानकारी";
+            }
+            else if (nameValue < 3) {
+                document.getElementById("spname").innerHTML = "न्यूनतम तीन अक्षरों का नाम होना चाहिए";
+                return "गलत जानकारी";
+            } else if (name.split(" ").length < 2) {
+                document.getElementById("spname").innerHTML = "कृपया पूरा नाम दर्ज करें (पहला और अंतिम नाम)";
+                return "गलत जानकारी";
+            }
+
+            // ++++++
+            var lnum = dobValue + nameValue;
+            x = lnum % 7; 
+            a = "सलाह : = ( नई शुरुआत करने के लिए खुद को ओपन रखें। 0 का मतलब है पोटेंशियल; इसलिए नई अवसरों का सामना करने के लिए तैयार रहें।)";
+            b = "सलाह :(लीडरशिप क्वालिटीज को डेवलप करें। 1 का मतलब है स्वतंत्रता; इसलिए खुद पर विश्वास रखें और नए प्रोजेक्ट्स में आगे बढ़ें।)";
+            c = "सलाह :( पार्टनरशिप्स पर फोकस करें। 2 का मतलब है सहयोग; इसलिए अपने दोस्तों या सहकर्मियों के साथ मिलकर काम करने की कोशिश करें।)";
+            d = "सलाह :(क्रिएटिविटी को अपनाएं। 3 का मतलब है स्व-प्रकाशन; इसलिए पेंटिंग, लेखन या किसी क्रिएटिव एक्टिविटी में समय बिताएं।)";
+            e = "सलाह :(स्थिरता और संरचना को प्राथमिकता दें। 4 का मतलब है नींव; इसलिए अपनी ज़िंदगी को व्यवस्थित करने के लिए योजना और अनुशासन का इस्तेमाल करें।)";
+            f = "सलाह :(बदलाव और एडवेंचर का स्वागत करें। 5 का मतलब है आज़ादी; इसलिए नए अनुभवों का सामना करने से ना डरें और कुछ अलग करें।)";
+            g = "सलाह :(परिवार और घरेलू जीवन को मजबूत करें। 6 का मतलब है पालन-पोषण; इसलिए घर में समय बिताएं और अपने प्रियजनों का ख्याल रखें।)";
+
+            spname.innerText = "";  //   error clear karne ke liye
+            if (x == 0) {
+                return x + "---> " + a
+            }
+
+            else if (x == 1) {
+                return x + "---->" + b
+            }
+
+            else if (x == 2) {
+                return x + "---->" + c
+            }
+            else if (x == 3) {
+                return x + "---->" + d
+            }
+            else if (x == 4) {
+                return x + "---->" + e
+            }
+            else if (x == 5) {
+                return x + "---->" + f
+            }
+            else if (x == 6) {
+                return x + "---->" + g
+            }
+            else {
+                return "! गलत चुनाव"
+            }
+
+        }
+
+        //  name me number ke validation ke liye
+        function validateInput() 
+        {
+            var input = document.getElementById('name');
+            var value = input.value;
+            // number ko box se automatic hatane ke liye
+            input.value = value.replace(/[0-9]/g, '');
+        }
+      
+
+    </script>
+</body>
+
+</html>
